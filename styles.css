@@ -31,6 +31,28 @@ h1 {
 #searchBar {
   width: 600px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+button {
+  height: 40px;
+  margin-top: 95px;
+  background-color: var(--text-color);
+  outline: none;
+  word-wrap: break-word;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  background-color: var(--background-color);
+  color: antiquewhite;
+  transform: translateY(10px);
 }
 
 input {
@@ -81,6 +103,47 @@ input {
 .api {
   text-transform: capitalize;
 }
+.error {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin: 3px;
+  animation: bounce 0.4s infinite;
+  opacity: 0;
+}
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.circle:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.show {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+}
 
 @media (max-width: 600px) {
   #searchBar {
@@ -88,5 +151,6 @@ input {
   }
   .result {
     width: 300px;
+    margin-left: 40px;
   }
 }
