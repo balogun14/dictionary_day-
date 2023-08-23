@@ -33,6 +33,8 @@ async function displayWords(e) {
     }
   }
 }
+alert("Made by Awwal");
+
 // SearchWord();
 window.addEventListener("keydown", (e) => {
   word = e.target.value;

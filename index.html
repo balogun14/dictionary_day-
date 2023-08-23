@@ -6,17 +6,30 @@
     <title>Dictionary</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8GCMDZ805S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-8GCMDZ805S");
+  </script>
+
   <body>
     <main id="main">
-        <h1>Dictionary</h1>
+      <h1>Dictionary</h1>
       <div id="searchBar">
-        <input type="text" placeholder="search here" id="search" required/>
+        <input type="text" placeholder="search here" id="search" required />
       </div>
-    <div id="results">
-    </div>
-    <p class="api">
-        api used is by freeDictionary API
-    </p>
+      <div id="results"></div>
+      <p class="api">api used is by freeDictionary API</p>
     </main>
   </body>
   <script src="./scripts.js"></script>
